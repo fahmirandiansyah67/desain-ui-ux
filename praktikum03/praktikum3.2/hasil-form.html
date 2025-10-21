@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hasil Pemesanan</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">Home</a>
+      <a href="#">Generate Link</a>
+      <a href="#">Transaction History</a>
+      <a href="#">Policy</a>
+      <a href="#">Logout</a>
+    </header>
+
+    <main>
+      <section class="left">
+        <div class="kotak"></div>
+      </section>
+
+      <section class="right">
+        <h2>Hasil Pemesanan</h2>
+        <br />
+
+        <p><strong>Title Here :</strong> <span id="output-title"></span></p>
+        <p><strong>Description :</strong></p>
+        <p id="output-description" style="white-space: pre-line"></p>
+
+        <p>
+          <strong>Account Number :</strong> <span id="output-account"></span>
+        </p>
+        <p><strong>Bank :</strong> <span id="output-bank"></span></p>
+        <p>
+          <strong>Account Holder :</strong> <span id="output-holder"></span>
+        </p>
+        <p>
+          <strong>Transaction :</strong> <span id="output-transaction"></span>
+        </p>
+
+        <br />
+        <p>
+          <strong>Send to Mobile Phone :</strong>
+          <span id="output-mobile"></span>
+        </p>
+        <p><strong>Send to Email :</strong> <span id="output-email"></span></p>
+      </section>
+    </main>
+
+    <script>
+      // Ambil data dari URL
+      const params = new URLSearchParams(window.location.search);
+
+      // Masukkan ke elemen HTML
+      document.getElementById("output-title").textContent =
+        params.get("title") || "-";
+      document.getElementById("output-description").textContent =
+        params.get("description") || "-";
+      document.getElementById("output-account").textContent =
+        params.get("accountNumber") || "-";
+      document.getElementById("output-bank").textContent =
+        params.get("bank") || "-";
+      document.getElementById("output-holder").textContent =
+        params.get("accountHolder") || "-";
+      document.getElementById("output-transaction").textContent =
+        params.get("transaction") || "-";
+      document.getElementById("output-mobile").textContent =
+        params.get("mobile") || "-";
+      document.getElementById("output-email").textContent =
+        params.get("email") || "-";
+    </script>
+  </body>
+</html>
