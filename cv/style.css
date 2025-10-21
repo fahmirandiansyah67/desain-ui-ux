@@ -1,0 +1,225 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  padding: 10px 10px;
+  line-height: 1;
+  background-color: #bcbcbc;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Mulai CSS */
+
+/* Bio */
+.pembungkus {
+  margin: auto;
+  width: 794px;
+  height: 1123px;
+  background-color: rgb(255, 255, 255);
+  border: 1.5px solid black;
+  border-radius: 10px;
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.bio .foto {
+  flex: 0 0 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.bio .foto img {
+  width: 80%;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.bio .deskripsi {
+  flex: 0 0 70%;
+  padding-left: 5px;
+  text-align: justify;
+}
+
+hr {
+  border: none;
+  height: 1px; /* ketebalan garis */
+  background-color: #000; /* warna garis hitam */
+}
+
+/* Deskripsi Pengalaman */
+
+.pengalaman1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+.isipengalaman1 {
+  padding-left: 60px;
+}
+
+.pengalaman2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+.isipengalaman2 {
+  padding-left: 60px;
+}
+
+.pendidikan {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+.isipendidikan {
+  padding-left: 60px;
+}
+
+.softskill,
+.hardskill {
+  display: flex;
+  justify-content: flex-start; /* biar sejajar kiri */
+  align-items: flex-start; /* biar teks rata atas */
+  margin-bottom: 15px; /* jarak antar baris */
+}
+
+.softskill > p,
+.hardskill > p {
+  width: 120px; /* lebar kolom kiri untuk judul */
+}
+
+.isisoftskill,
+.isihardskill {
+  flex: 1; /* isi ambil sisa ruang di kanan */
+}
+
+.isisoftskill p,
+.isihardskill p {
+  margin: 2px 0; /* rapikan jarak antar item */
+}
