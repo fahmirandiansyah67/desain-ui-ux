@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 2000px;
+}
+
+/* Header */
+#header {
+  position: relative;
+  background-color: chocolate;
+  text-align: center;
+  height: 150px;
+}
+
+#header h1 {
+  position: relative;
+  color: blue;
+  font-size: 50px;
+}
+
+#header blockquote {
+  background-color: yellow;
+  padding: 10px 0;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Isi */
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #666;
+  margin: 10px 20px;
+  font-size: 25px;
+}
+
+.gambar {
+  text-align: center;
+}
+
+.b {
+  font-size: 50px;
+  color: blue;
+  line-height: 0.5;
+}
+
+.isi,
+#profil,
+#beternak,
+.koleksi {
+  padding: 0 20px;
+}
+
+.koleksi img {
+  width: 440px;
+}
+
+.promo {
+  text-align: center;
+  background-color: #be2828a9;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+
+.link a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+a:hover {
+  font-size: 200%;
+  transition: 0.3s;
+}
