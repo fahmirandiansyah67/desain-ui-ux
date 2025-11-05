@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+nav {
+  background-color: pink;
+  height: 100vh;
+  width: 25%;
+}
+
+header {
+  position: absolute;
+  left: 25%;
+  width: 75%;
+  height: 4rem;
+  background-color: yellow;
+}
+
+main {
+  display: flex;
+  position: absolute;
+  width: 75%;
+  height: 90vh;
+  left: 25%;
+  top: 4rem;
+  background-color: brown;
+}
+
+article {
+  flex: 0 0 70%;
+  background-color: white;
+}
+
+aside {
+  flex: 0 0 30%;
+  background-color: blue;
+}
+
+footer {
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  width: 75%;
+  height: 4rem;
+  background-color: yellow;
+}
