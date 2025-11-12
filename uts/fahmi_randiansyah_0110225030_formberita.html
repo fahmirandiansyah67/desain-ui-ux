@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Berita</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>FORM BERITA</h1>
+        <p>
+          <a href="#"
+            >Home > <a href="#">Admin > <a href="#">Kelola Masjid</a></a></a
+          >
+        </p>
+      </header>
+
+      <form action="">
+        <label for="nama-masjid">Nama Masjid</label>
+        <input type="text" name="nama-masjid" id="nama-masjid" required /><br />
+
+        <label for="judul-berita">Judul Berita</label>
+        <input
+          type="text"
+          name="judul-berita"
+          id="judul-berita"
+          required
+        /><br />
+
+        <label for="isi-berita">Isi Berita</label>
+        <textarea
+          name="isi-berita"
+          id="isi-berita"
+          rows="7"
+          cols="50"
+          required
+        ></textarea
+        ><br />
+
+        <label for="penulis">Penulis</label>
+        <input type="text" name="penulis" id="penulis" /><br />
+
+        <label for="date">Tanggal Terbit</label>
+        <input type="date" name="date" id="date" /><br />
+
+        <label for="status-berita">Status Berita</label>
+        <input type="radio" id="draft" name="status-berita" value="Draft" />
+        <label for="draft">Draft</label>
+        <input type="radio" id="submit" name="status-berita" value="Submit" />
+        <label for="submit">Submit</label>
+        <input type="radio" id="review" name="status-berita" value="Review" />
+        <label for="review">Review</label>
+        <input type="radio" id="reject" name="status-berita" value="Reject" />
+        <label for="reject">Reject</label>
+        <input type="radio" id="approve" name="status-berita" value="Approve" />
+        <label for="approve">Approve</label><br />
+
+        <button type="submit" value="Submit">Simpan</button>
+        <button type="submit" value="Submit">Update</button>
+        <button type="reset" value="reset">Hapus</button>
+      </form>
+    </div>
+  </body>
+</html>
